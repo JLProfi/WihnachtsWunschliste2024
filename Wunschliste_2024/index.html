@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weihnachtswünsche</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <h1>✨ Meine Weihnachtswünsche 2024 ✨</h1>
+            <p>Drücke auf ein Bild, um mehr zu erfahren!</p>
+        </header>
+        <main>
+            <div class="gallery">
+                <a href="https://www.mindfactory.de/product_info.php/Arctic-P12-PWM-PST-5er-Pack-120x120x25mm-200-1800-U-min-22-5-dB-A--schw_1376188.html" target="_blank" class="card">
+                    <img src="Screenshot 2024-12-08 180245.png" alt="Wunsch 1">
+                    <div class="caption">Gehäuselüfter damit mein PC <strong>cool</strong> bleibt</div>
+                </a>
+            </div>
+
+            <p>.</p>
+            <p>Warum Geld mir viel bringt:</p>
+
+            <div class="gallery1">
+                <a href="https://example.com/wunsch1" target="_blank" class="card">
+                    <img src="Custom-PCs.jpg" alt="Wunsch 1">
+                    <div class="caption">Mein zweites Gehirn unterstützt mich</div>
+                </a>
+                <a href="https://example.com/wunsch3" target="_blank" class="card">
+                    <img src="3150_63_1_g.jpeg" alt="Wunsch 3">
+                    <div class="caption">Der Führerschein wurde nicht günstiger</div>
+                </a>
+                <a href="https://example.com/wunsch4" target="_blank" class="card">
+                    <img src="csm_EiF_stapel_geldmuenzen_haende_c_lovelyday12_AdobeStock_276454828_980_c2faa9b048.jpg" alt="Wunsch 4">
+                    <div class="caption">Die Steuern wurden nicht gesenkt</div>
+                </a>
+                <a href="https://example.com/wunsch4" target="_blank" class="card">
+                    <img src="Bild-Jamaika-Ride-and-Swim.jpg" alt="Wunsch 4">
+                    <div class="caption">Ein Leben ohne Spaß, ist kein Leben</div>
+                </a>
+                <a href="https://example.com/wunsch4" target="_blank" class="card">
+                    <img src="uoTFZE3GYM.png" alt="Wunsch 4">
+                    <div class="caption">Kleider machen Leute</div>
+                </a>
+                <a href="https://example.com/wunsch4" target="_blank" class="card">
+                    <img src="35753976-8ud56wsh8x5tw2r8wo7036hv-ExtraLarge.webp" alt="Wunsch 4">
+                    <div class="caption">Genauso wie Uhren</div>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>Frohe Weihnachten! 🎄</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<style>
+/* Allgemeine Stile */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #000;
+}
+
+/* Hintergrund mit Sterneneffekt */
+.background {
+    position: relative;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Galerie */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    z-index: 2;
+    position: relative;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Karten für Bilder */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 4 / 3; /* Einheitliches Seitenverhältnis */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Kein Verzerren, Füllen des Rahmens */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Bildbeschriftung */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+.card:hover .caption {
+    background: rgba(255, 215, 0, 0.9);
+    color: #000;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Sterne Animation */
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    animation: stars 50s linear infinite;
+}
+
+@keyframes stars {
+    from {
+        background: radial-gradient(circle, #fff 2px, transparent 2px) 0 0 / 100px 100px;
+    }
+    to {
+        background: radial-gradient(circle, #fff 2px, transparent 2px) 100px 100px / 100px 100px;
+    }
+}
+
+/* Responsives Layout */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .caption {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .caption {
+        font-size: 0.9rem;
+    }
+}
+</style>
